@@ -1,0 +1,25 @@
+{
+    "name": "reddit-4-chan",
+    "version": "0.1.1",
+    "description": "View 4chan threads in a reddit-like nested format",
+
+    "incognito": "split",
+    "permissions": [
+    ],
+
+    "content_scripts": [
+      {
+       "matches": ["*://boards.4channel.org/*/thread/*", "*://boards.4chan.org/*/thread/*"],
+       "js": ["main.js"],
+       "run_at": "document_end"
+      }
+    ],
+
+    "icons" : {
+      "16": "16.png",
+      "48": "48.png",
+      "128": "128.png"
+    },
+
+    "manifest_version": 2
+ }
